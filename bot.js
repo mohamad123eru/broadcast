@@ -52,8 +52,12 @@ client.on('message', message => { // هاذا للبرودكسات
 			})
 			dontSendBC.on('collect', r => {
 				msg.delete();
-				message.reply(':white_check_mark: **تم الغاء ارسال رسالتك بنجاح**').then(msg => msg.delete(5000));
+			message.reply(':white_check_mark: **تم الغاء ارسال رسالتك بنجاح**').then(msg => msg.delete(5000));
+				
+client.user.setGame(`CONVERSION_COMUN...`)
+client.user.setStatus("dnd")			
 			});
+		
 		})
 	}
 });
